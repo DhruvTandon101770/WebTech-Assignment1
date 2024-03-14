@@ -20,7 +20,6 @@ h1, h2, h3, h4 {
 	font-family: 'Ubuntu', 'Times New Roman', Times, serif;
 	font-size: 1.5em;
 }
-		
 .img { 
 	border: none;
 	max-width: 100%;
@@ -66,17 +65,14 @@ a {
 	color: #000000;
 	transition-duration: 0.4s;
 }
-
 a:link,
 a:visited,
 a:focus {
 	color: #ffffff;
 }
-
 a:hover {
 	background: #005449;
 }
-
 a:active {
 	background: #005449;
 	outline-style: dotted;
@@ -84,19 +80,16 @@ a:active {
 	outline-offset: -4px;
 	transition-duration: 0s;
 }
-
 a.left-nav-button:hover,
 a.left-nav-button:active,
 a.left-nav-button:visited {
 	border-top-left-radius: 20px;
 }
-
 a.right-nav-button:hover,
 a.right-nav-button:active
 a.left-nav-button:visited {
 	border-top-right-radius: 20px;
 }
-
 .active-page {
 	background: #005449;
 	border-top-left-radius: 20px;
@@ -109,7 +102,6 @@ a.left-nav-button:visited {
 	align-items: center;
 	justify-content: center;
 }
-
 .Meeraki::before {
 	content: "";
 	background-image: url('WhatsApp Image 2024-03-12 at 22.17.16_e55370c2.jpg');
@@ -125,7 +117,6 @@ a.left-nav-button:visited {
      border: solid 2px #000000;
      border-top: none;
 }
-
 .Meeraki-description {
 	position: relative;
 	color: #000000;
@@ -133,14 +124,20 @@ a.left-nav-button:visited {
 	font-size: 1.75rem;
 	line-height: 1.2;
 	text-align: left;
+	text-align: center;
 }
-
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3rem;
+  }
 .Meeraki-description h2 {
 	font-family: 'Times New Roman', Times, serif;
 	font-weight: 200;
 	font-size: 3.5rem;
 }
-
 #note {
     font-family: 'brush Script Mt', Brush Script Std, cursive;
 	font-weight: 200;
@@ -152,29 +149,24 @@ a.left-nav-button:visited {
 	align-items: center;
 	text-align: center;
 	background: #FFFDD0;
-
 }
-
 .owner-image {
 	width: 250px;
 	border-radius: 50%;
 	border: solid 2px #000000;
 	margin-bottom: 0px;
 }
-
 .about-description {
 	margin: 40px 0;
 	font-size: 1.6rem;
 	width: 60%;
 }
-
 .about-images {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	background: #FFFDD0;
 }
-
 .about-images a {
 	text-decoration: none;
 	width: auto;
@@ -207,19 +199,16 @@ a.left-nav-button:visited {
 .about-images a:focus {
 	color: #000000;
 }
-
 .about-images a:hover {
 	background: #FFFDD0;
 	transform: translate(0, -5%);
 }
-
 .about-images-item {
 	margin: 2%;
 	color: #00302A;
 	background: #FFFDD0;
 
 }
-
 .about-image {
 	width: 300px;
 	height: 300px;
@@ -228,7 +217,6 @@ a.left-nav-button:visited {
 	background: #FFFDD0;
 
 }
-
 .about-image:hover {
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -238,19 +226,17 @@ a.left-nav-button:visited {
 	text-align: center;
 	border-radius: 20px;
 }
-
 .contact a:active,
 .contact a:hover {
 	padding: 0.5em;
 	border-radius: 20px;
 }
-
 .footer {
 	padding-top: 2em;
 	padding-bottom: 1.5rem;
 }
 #timeline{
-	width: 800px;
+	width: 1455px;
 	height: 742px;
 	border-radius: 0%;
 	border: solid 1px #000000;
@@ -263,3 +249,17 @@ a.left-nav-button:visited {
 	font-weight: 200;
 	font-size: 1rem;
 }
+#button {
+    background-color: #00302A; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }
