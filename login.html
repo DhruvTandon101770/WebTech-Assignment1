@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+<header>
+    <a href="index.html" class="aesthetic-button">Home</a>
+</header>
+  
+<div class="container">
+  <h2>Login</h2>
+  <form id="loginForm" onsubmit="return validateForm()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+  function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var usernamePattern = /^[a-zA-Z0-9]+$/; // Pattern for username: only alphanumeric characters
+    var passwordPattern = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[!@#$%^&*]).{8,}$/; // Pattern for password: at least 8 characters, one uppercase letter, one lowercase letter, one number, one special character
+
+    if (!username.match(usernamePattern)) {
+      document.getElementById('message').innerHTML = "Username should contain only letters and numbers.";
+      return false;
+    }
+    
+    if (!password.match(passwordPattern)) {
+      document.getElementById('message').innerHTML = "Login Successfull Happy Shopping!!";
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
+</body>
+</html>
