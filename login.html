@@ -34,9 +34,8 @@
   function validateForm() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    var usernamePattern = /^[a-zA-Z0-9]+$/; // Pattern for username: only alphanumeric characters
-    var passwordPattern = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[!@#$%^&*]).{8,}$/; // Pattern for password: at least 8 characters, one uppercase letter, one lowercase letter, one number, one special character
-
+    var usernamePattern = /^[a-zA-Z0-9]+$/; 
+    var passwordPattern = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[!@#$%^&*]).{8,}$/; 
     if (!username.match(usernamePattern)) {
       document.getElementById('message').innerHTML = "Username should contain only letters and numbers.";
       return false;
