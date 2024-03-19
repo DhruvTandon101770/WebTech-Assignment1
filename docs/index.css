@@ -247,3 +247,8 @@ a:hover {
     border-radius: 8px;
     transition-duration: 0.4s;
   }
+  @media (max-width: 768px) {
+    .about.about-description.about-image.about-image:hover.about-images.about-images-item.about.about-description.about-image.about-image:hover.about-images.about-images-item..active-page.about.about-description.about-image.about-image:hover.about-images.about-images-item.about.about-description.about-image.about-image:hover.about-images.about-images-item.active-page. {
+        width: 90%; 
+	}}
+	
