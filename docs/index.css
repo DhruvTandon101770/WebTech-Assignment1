@@ -73,23 +73,7 @@ a:focus {
 a:hover {
 	background: #005449;
 }
-a:active {
-	background: #005449;
-	outline-style: dotted;
-	outline-color: #001F1B;
-	outline-offset: -4px;
-	transition-duration: 0s;
-}
-a.left-nav-button:hover,
-a.left-nav-button:active,
-a.left-nav-button:visited {
-	border-top-left-radius: 20px;
-}
-a.right-nav-button:hover,
-a.right-nav-button:active
-a.left-nav-button:visited {
-	border-top-right-radius: 20px;
-}
+
 .active-page {
 	background: #005449;
 	border-top-left-radius: 20px;
